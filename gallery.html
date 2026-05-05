@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery | Gurukul Defence Academy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
+    body{background:#0f1711;color:#fff;line-height:1.6}
+    html{scroll-behavior:smooth}
+    .container{width:90%;max-width:1250px;margin:auto}
+    header{position:fixed;top:0;left:0;width:100%;z-index:1000;background:rgba(0,0,0,.45);backdrop-filter:blur(10px);border-bottom:1px solid rgba(255,255,255,.08)}
+    nav{display:flex;justify-content:space-between;align-items:center;padding:18px 0}
+    .logo{font-size:1.6rem;font-weight:800;color:#C19A3F}
+    .nav-links{display:flex;gap:28px;list-style:none}
+    .nav-links a{text-decoration:none;color:#fff;font-weight:500;transition:.3s}
+    .nav-links a:hover,.nav-links a.active{color:#C19A3F}
+    .btn{display:inline-block;background:#C19A3F;color:#111;padding:12px 24px;border-radius:14px;text-decoration:none;font-weight:700}
+    .hero{height:70vh;background:linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.8)),url('https://images.unsplash.com/photo-1538146888063-3ecf5e002d7c?q=80&w=2076&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') center/cover no-repeat;display:flex;align-items:center;text-align:center}
+    .hero-content{max-width:850px;margin:auto;padding-top:70px}
+    .tag{color:#C19A3F;letter-spacing:4px;text-transform:uppercase;font-size:.9rem;margin-bottom:18px}
+    .hero h1{font-size:4rem;line-height:1.15;margin-bottom:16px}
+    .hero p{font-size:1.1rem;color:#ddd;max-width:800px;margin:auto}
+    .quote-strip{background:#111a13;padding:28px 0;text-align:center;border-top:1px solid rgba(255,255,255,.05);border-bottom:1px solid rgba(255,255,255,.05)}
+    .quote-strip p{font-size:1.2rem;font-style:italic;color:#ddd}
+    section{padding:90px 0}
+    .section-title{text-align:center;margin-bottom:40px}
+    .section-title p{color:#C19A3F;text-transform:uppercase;font-weight:600;letter-spacing:3px;margin-bottom:10px}
+    .section-title h2{font-size:2.6rem}
+    .filters{display:flex;justify-content:center;flex-wrap:wrap;gap:12px;margin-bottom:35px}
+    .filter-btn{padding:12px 22px;border:1px solid rgba(255,255,255,.1);background:#111a13;color:#fff;border-radius:999px;cursor:pointer;font-weight:600;transition:.3s}
+    .filter-btn.active,.filter-btn:hover{background:#C19A3F;color:#111}
+    .gallery-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+    .gallery-item{background:#111a13;border:1px solid rgba(255,255,255,.08);border-radius:22px;overflow:hidden;transition:.35s}
+    .gallery-item:hover{transform:translateY(-8px);border-color:#C19A3F}
+    .gallery-item img{width:100%;height:280px;object-fit:cover;display:block}
+    .gallery-content{display:none}
+    .gallery-content{padding:18px}
+    .gallery-content h3{font-size:1.15rem;margin-bottom:8px}
+    .gallery-content p{font-size:.95rem;color:#bbb}
+    .quote-box{margin-top:70px;background:linear-gradient(135deg,#111a13,#1a241c);padding:40px;border-radius:24px;text-align:center;border:1px solid rgba(255,255,255,.08)}
+    .quote-box h3{font-size:2rem;margin-bottom:12px;color:#C19A3F}
+    .quote-box p{font-size:1.1rem;color:#ddd;font-style:italic}
+    footer{padding:30px 0;text-align:center;border-top:1px solid rgba(255,255,255,.08);color:#aaa}
+    @media(max-width:1100px){.gallery-grid{grid-template-columns:repeat(3,1fr)}}
+    @media(max-width:850px){.nav-links{display:none}.hero h1{font-size:2.7rem}.gallery-grid{grid-template-columns:repeat(2,1fr)}}
+    @media(max-width:600px){.gallery-grid{grid-template-columns:1fr}.hero h1{font-size:2.2rem}.section-title h2{font-size:2rem}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <div class="logo">Gurukul Defence Academy</div>
+        <ul class="nav-links">
+          <li><a href="index.html#home">Home</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#courses">Courses</a></li>
+          <li><a href="gallery.html" class="active">Gallery</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+        <a href="registration.html" class="btn">Join now</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container hero-content">
+      <div class="tag">Gallery of Discipline & Success</div>
+      <h1>Real Training. Real Students. Real Results.</h1>
+      <p>Explore the journey of discipline, strength, and success at Gurukul Defence Academy through our training grounds, selected students, and academy life.</p>
+    </div>
+  </section>
+
+  <div class="quote-strip">
+    <div class="container">
+      <p>“The More You Sweat in Training, The Less You Bleed in Battle.”</p>
+    </div>
+  </div>
+
+  <section>
+    <div class="container">
+      <div class="section-title">
+        <p>Gallery</p>
+        <h2>Moments of Discipline & Glory</h2>
+      </div>
+
+      
+
+      <div class="gallery-grid">
+        <div class="gallery-item"><img src="images/student1.jpg"></div>
+        <div class="gallery-item"><img src="images/sir1.jpg"></div>
+        <div class="gallery-item"><img src="images/student2.jpg"></div>
+        <div class="gallery-item"><img src="images/student3.jpg"></div>
+        <div class="gallery-item"><img src="images/student4.jpg"></div>
+        <div class="gallery-item"><img src="images/student5.jpg"></div>
+        <div class="gallery-item"><img src="images/student6.jpg"></div>
+        <div class="gallery-item"><img src="images/student7.jpg"></div>
+        <div class="gallery-item"><img src="images/student8.jpg"></div>
+        <div class="gallery-item"><img src="images/highjump1.jpg"></div>
+        <div class="gallery-item"><img src="images/traning.jpg"></div>
+        <div class="gallery-item"><img src="images/traning1.jpg"></div>
+        <div class="gallery-item"><img src="images/traning2.jpg"></div>
+        <div class="gallery-item"><img src="images/traning3.jpg"></div>
+        <div class="gallery-item"><img src="images/traning4.jpg"></div>
+        <div class="gallery-item"><img src="images/traning5.jpg"></div>
+        <div class="gallery-item"><img src="images/traning6.jpg"></div>
+        <div class="gallery-item"><img src="images/traning18.jpg"></div>
+        <div class="gallery-item"><img src="images/traning19.jpg"></div>
+        <div class="gallery-item"><img src="images/traning12.jpg"></div>
+        <div class="gallery-item"><img src="images/traning16.jpg"></div>
+        <div class="gallery-item"><img src="images/traning14.jpg"></div>
+        <div class="gallery-item"><img src="images/traning15.jpg"></div>
+        <div class="gallery-item"><img src="images/traning17.jpg"></div>
+        <div class="gallery-item"><img src="images/student20.jpg"></div>
+        <div class="gallery-item"><img src="images/student21.jpg"></div>
+        <div class="gallery-item"><img src="images/student22.jpg"></div>
+        <div class="gallery-item"><img src="images/student23.jpg"></div>
+        <div class="gallery-item"><img src="images/student24.jpg"></div>
+        <div class="gallery-item"><img src="images/student10.jpg"></div>
+        <div class="gallery-item"><img src="images/student11.jpg"></div>
+        <div class="gallery-item"><img src="images/student12.jpg"></div>
+        <div class="gallery-item"><img src="images/student13.jpg"></div>
+        <div class="gallery-item"><img src="images/student14.jpg"></div>
+        <div class="gallery-item"><img src="images/student15.jpg"></div>
+        <div class="gallery-item"><img src="images/student16.jpg"></div>
+        <div class="gallery-item"><img src="images/student17.jpg"></div>
+        <div class="gallery-item"><img src="images/student18.jpg"></div>
+        <div class="gallery-item"><img src="images/student19.jpg"></div>
+        <div class="gallery-item"><img src="images/traning98.jpg"></div>
+        
+
+
+        
+
+    
+    </div>
+  <div class="quote-box">
+    <h3>Train Hard. Serve Proud.</h3>
+    <p>“A Soldier is not born, he is trained through discipline, sacrifice, and courage.”</p>
+  </div>
+  </section>
+
+  <footer>
+    <div class="container">© 2026 Gurukul Defence Academy. All Rights Reserved.</div>
+  </footer>
+</body>
+</html>
