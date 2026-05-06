@@ -107,7 +107,15 @@
       </div>
     </div>
   </section>
+<!-- /toggle menu script -->
+  <script>
+  const menuToggle = document.getElementById("menu-toggle");
+  const navLinks = document.getElementById("nav-links");
 
+  menuToggle.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+  });
+</script>
   <footer>
     <div class="container">© 2026 Gurukul Defence Academy. All Rights Reserved.</div>
   </footer>
